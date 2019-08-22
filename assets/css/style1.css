@@ -9,6 +9,11 @@
 
 nav {font-family: sans-serif;font-size: 10px;}
 #main {width: 900px; margin: 10px auto;}
+body {
+    font-family: 'lato'; font-size: 18px;
+    background-image: url(../images/map-bg.jpg);
+}
+
 
 /* 
     Add a CSS ruleset targeting the restaurant name to accomplish the following:
@@ -17,6 +22,9 @@ nav {font-family: sans-serif;font-size: 10px;}
         - set the font color to #5d4037
 */
 
+#main h1 {
+    font-family: 'Supermercado One'; font-size: 45px; color: #5d4037;
+}
 
 /* 
     Update the following ruleset (#menu) to accomplish the following:
@@ -25,6 +33,7 @@ nav {font-family: sans-serif;font-size: 10px;}
 #menu {
     columns: 400px 2;
     column-gap: 100px;
+    column-rule: 2px dashed rosybrown;
 }
 
 section {padding-bottom: 50px;}
@@ -35,7 +44,10 @@ h2 {margin: 0;}
         - Show each of the section headings of the menu  in small caps
         - set the font color to #6d4c41
 */
-
+#menu h2 {
+    font-variant: small-caps;
+    color: #6d4c41;
+}
 
 /* 
     Add a CSS ruleset targeting the name of each menu item to accomplish the following:
@@ -43,6 +55,10 @@ h2 {margin: 0;}
         - Make the font bold
 */
 
+#menu dt {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 dd {margin: 0 0 12px 0; display: flex;}
 .details {order: 1;}
@@ -55,6 +71,8 @@ dd {margin: 0 0 12px 0; display: flex;}
 .price {
     order: 2;
     padding-left: 10px;
+    font-size: large;
+    color: firebrick;
 }
 
 address {padding: 10px;}
@@ -63,3 +81,7 @@ address {padding: 10px;}
     Add a CSS ruleset targeting the footer to accomplish the following:
         - Draw a 2px dashed rosybrown border
 */
+
+footer {
+    border: 2px dashed rosybrown
+}
